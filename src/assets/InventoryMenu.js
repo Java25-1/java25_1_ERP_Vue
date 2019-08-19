@@ -55,8 +55,8 @@ const commonMenu = {
                 permission:""
             },
             components:{
-                warehouseOther:()=> import('../views/table.vue'),
-                deliveryOther:()=> import('../views/账款管理/FPcgfp.vue')
+                warehouseOther:()=> import('../views/销售管理/qtrk.vue'),
+                deliveryOther:()=> import('../views/销售管理/qtck.vue')
             },
             children:[
                 {

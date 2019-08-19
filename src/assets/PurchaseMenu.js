@@ -145,7 +145,7 @@ const commonMenu = {
                 permission:""
             },
             components:{
-                apportionWork:()=> import('../views/table.vue')
+                apportionWork:()=> import('../views/采购管理/disk.vue')
             },
             children:[
                 {
