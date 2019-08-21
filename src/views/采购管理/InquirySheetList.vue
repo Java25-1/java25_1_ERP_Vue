@@ -1,5 +1,5 @@
 <template>
-<div class='' style="height:200px;overflow: scroll;width:1100px">
+<div class='' style="height:200px;overflow: scroll;width:1030px">
     <table class="table table-hover table-striped  text-center" style="width:2200px;"> 
         <thead>
             <tr>
