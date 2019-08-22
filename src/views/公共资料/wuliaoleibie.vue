@@ -1,41 +1,47 @@
 <template>
-<div class=''>
-
- <div>类别编号:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>类别名称:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>英文名称:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>存货科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>销售收入科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>销售成本科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>赠品费用科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>其它收入科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>其它费用科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>其它成本科目:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>备注:<el-input
-  type="textarea"
-  :rows="2"
-  placeholder="请输入内容"
-  v-model="textarea">
-</el-input>
-<el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select>
-
-</div>
+<div>
+  <el-form ref="form" :model="form" label-width="80px">
+      <el-form-item label="类别编号">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="类别名称">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="英文名称">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="存货科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="销售收入科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="销售成本科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="赠品费用科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="其它收入科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="其它费用科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="其它成本科目">
+        <el-input ></el-input>
+      </el-form-item>
+      <el-form-item label="备注">
+        <el-input type="textarea"></el-input>
+      </el-form-item>
+  </el-form>
 </div>
 </template>
 <script>
 export default {
   data() {
-    return {
-      input: ''
-    }
      return {
+       input: '',
       textarea: ''
     }
 

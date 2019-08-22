@@ -1,28 +1,36 @@
 <template>
-<div class=''>
-<div>仓库编号:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>仓库名称:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>仓库简称:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>英文名称:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>联系人员:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>联系电话:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>仓库地址:<el-input v-model="input" placeholder="请输入内容"></el-input></div>
-<div>备注:<el-input
-  type="textarea"
-  :rows="2"
-  placeholder="请输入内容"
-  v-model="textarea">
-</el-input>
-<el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select>
-
-</div>
+<div>
+  <el-form ref="form" :model="form" label-width="80px">
+      <el-form-item label="仓库编号">
+        <el-input v-model="form.ckid"></el-input>
+      </el-form-item>
+      <el-form-item label="仓库名称">
+        <el-input v-model="form.ckname"></el-input>
+      </el-form-item>
+      <el-form-item label="仓库简称">
+        <el-input v-model="form.ckeasyname"></el-input>
+      </el-form-item>
+      <el-form-item label="英文名称">
+        <el-input v-model="form.ckegname"></el-input>
+      </el-form-item>
+      <el-form-item label="联系人员">
+        <el-input v-model="form.cklianxirenyuan"></el-input>
+      </el-form-item>
+      <el-form-item label="联系电话">
+        <el-input v-model="form.ckphone"></el-input>
+      </el-form-item>
+      <el-form-item label="仓库地址">
+        <el-input v-model="form.ckaddress"></el-input>
+      </el-form-item>
+      <el-form-item label="备注">
+        <el-input type="textarea" v-model="form.ckbeizhu"></el-input>
+      </el-form-item>
+      <el-form-item >
+        <el-select v-model="form.cksheding" placeholder="设定">
+          <el-option label="业务员责任绩效设定" value="shanghai"></el-option>
+        </el-select>
+      </el-form-item>
+  </el-form>
 </div>
 </template>
 
@@ -31,16 +39,21 @@
 export default {
   data() {
     return {
-      input: ''
-    }
-     return {
-      textarea: ''
+      form: {
+          ckid: '',
+          ckname: '',
+          ckeasyname: '',
+          ckegname: '',
+          cklianxirenyuan: '',
+          ckphone: '',
+          ckaddress: '',
+          ckbeizhu: '',
+          cksheding:''
+        }
+
+      
     }
 
   }
 }
 </script>
-<style  scoped>
-/*@import url(); 引入公共css类*/
-
-</style>

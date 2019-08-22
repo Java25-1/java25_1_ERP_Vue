@@ -49,9 +49,7 @@
   export default {
     data() {
       return {
-        input: ''
-      }
-      return {
+        input: '',
         tableData: [{
           date: '2016-05-02',
           name: '王小虎',

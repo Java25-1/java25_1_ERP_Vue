@@ -40,7 +40,7 @@ const commonMenu = {
                     meta: {
                         icon: "",
                         title: '出库类型设定',
-                        permission:""
+                        permission:"asdfghjk"
                     }
                 }
             ]
