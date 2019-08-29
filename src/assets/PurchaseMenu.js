@@ -66,18 +66,18 @@ const commonMenu = {
                 permission:""
             },
             components:{
-                purchaseOrder:()=> import('../views/采购管理/Order.vue'),
+                Order:()=> import('../views/采购管理/Order.vue'),
                 purchaseEnquiry:()=> import('../views/采购管理/InquirySheet.vue'),
                 purchaseRequisitions:()=> import('../views/采购管理/PurchaseRequisition.vue'),
-                purchaseStorage:()=> import('../views/账款管理/FPcgfp.vue'),
+                purchaseStorage:()=> import('../views/采购管理/Warehousing.vue'),
                 purchaseReturn:()=> import('../views/采购管理/ReturnGoods.vue'),
                 purchaseInvoice:()=> import('../views/账款管理/FPcgfp.vue')
             },
             children:[
                 {
-                    path:"/purchaseOrder",
+                    path:"/Order",
                     icon: "",
-                    name: "purchaseOrder",
+                    name: "Order",
                     meta: {
                         icon: "",
                         title: "采购订单",
