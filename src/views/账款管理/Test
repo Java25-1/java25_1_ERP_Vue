@@ -4,8 +4,8 @@
             <el-row type="flex" class="row-bg" justify="center" >
                 <el-col :span="10"><div class="grid-content bg-purple" :label-position="left">
 
-                    <el-form-item label="供应商：" >
-                        <el-input v-model="form.name" @dblclick.native="open1"></el-input>
+                    <el-form-item label="客户：">
+                        <el-input v-model="form.name"></el-input>
                     </el-form-item>
                     <el-form-item  label="结算方式一：">
                         <el-row>
@@ -245,7 +245,7 @@
                 form: {
                     name: '',
                     region: '',
-                    TypesofWithdrawals:'预付款',
+                    TypesofWithdrawals:'预收款',
                     date1: '',
                     date2: '',
                     delivery: false,
@@ -260,9 +260,12 @@
             onSubmit() {
                 console.log('submit!');
             }
-
+            // },
+            // handleClick(tab, event) {
+            //     console.log(tab, event);
+            // }
         }
-        }
+    }
 </script>
 
 <style scoped>
